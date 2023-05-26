@@ -10,14 +10,13 @@ CREATE TABLE dogs (
    name TEXT NOT NULL
 )
 
-CREATE TABLE favorites (
-   id INTEGER PRIMARY KEY AUTOINCREMENT,
-   user_id INTEGER NOT NULL,
-   dog_id INTEGER NOT NULL,
-   UNIQUE (dog_id, user_id)
-)
-
-
+CREATE TABLE favorites(
+   user_id INTEGER,
+   dog_id INTEGER,
+   FOREIGN KEY(user_id) REFERENCES users(id),
+   FOREIGN KEY(dog_id) REFERENCES dogs(id),
+   UNIQUE(user_id, dog_id)
+   )
 
 INSERT INTO users (first_name, last_name, motto)
 VALUES ('Jon', 'Higgz', 'I love coding')

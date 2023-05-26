@@ -28,7 +28,6 @@ We will also need to create some entries in these tables:
    - Create a user named Peter Garboni, who's life motto is "I love coding even more".
 
 2. Dogs
-
    - Create a dog named DOOMSLAYER
    - Create a dog named Zoey
    - Create a dog named Jefferey
