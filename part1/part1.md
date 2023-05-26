@@ -43,3 +43,5 @@ We will also need to create some entries in these tables:
 Go ahead and run `npx jest part1 --watch`. You will need to create a `main.db` and change it via your `sqlite` command on your terminal. As you begin to setup your database you should notice that the tests will respond to the changes if you rerun it.
 
 Once main.db is set up correctly and all of your part 1 tests are passing you may move on to part 2.
+
+

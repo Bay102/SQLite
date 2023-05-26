@@ -32,7 +32,7 @@ describe("messing around", () => {
 
   it("the file at 'data/main.db' should exist", () => {
     const filepath = "data/main.db";
-    const file = readFileSync(filepath);
+    const file = readFileSync(filepath); 
     expect(file).toBeDefined();
   });
 
